@@ -13,7 +13,9 @@ let obj = {
 
 function fun(obj) {
    for (let key in obj) {
-       console.log('Ключ: ' + key + ', ' + 'Значение: ' + obj[key]);
+       if (obj.hasOwnProperty(key) {
+           console.log('Ключ: ' + key + ', ' + 'Значение: ' + obj[key]);
+       }
    }
 }
 
